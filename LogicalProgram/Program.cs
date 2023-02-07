@@ -10,7 +10,8 @@ namespace LogicalProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome In Logical Program");
+            FibonacciSeries Num = new FibonacciSeries();
+            Num.Series();
             Console.ReadLine();
         }
     }
