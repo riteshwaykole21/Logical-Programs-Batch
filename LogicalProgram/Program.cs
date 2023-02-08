@@ -10,8 +10,20 @@ namespace LogicalProgram
     {
         static void Main(string[] args)
         {
-            FibonacciSeries Num = new FibonacciSeries();
-            Num.Series();
+            Console.WriteLine("1 : FibonacciSeries\n 2: PerfectNumber");
+            Console.WriteLine("Enter a Option");
+            int Option = Convert.ToInt32(Console.ReadLine());
+            switch(Option)
+            {
+                case 1:
+                    FibonacciSeries Num = new FibonacciSeries();
+                    Num.Series();
+                    break;  
+                case 2:
+                    PerfectNumber perfect = new PerfectNumber();
+                    perfect.Perfect();
+                    break;
+            }
             Console.ReadLine();
         }
     }

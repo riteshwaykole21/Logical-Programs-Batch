@@ -17,12 +17,12 @@ namespace LogicalProgram
             Console.WriteLine("Enter The Number To Extent Fibonacci Series");
             int Num = Convert.ToInt32(Console.ReadLine());
             Console.Write("Fibonacci Series"+" ");
-            Console.Write(A +" "+ B +" ");
+            Console.Write(A +" ,"+ B +" ,");
             
             for (int i = 3;i <= Num;i++)
             {
                 C = B + A;
-                Console.Write(C+" ");
+                Console.Write(C+" ,");
                 A = B;
                 B = C;
             }
